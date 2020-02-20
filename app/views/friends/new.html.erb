@@ -1,2 +1,27 @@
 <h1>Friends#new</h1>
 <p>Find me in app/views/friends/new.html.erb</p>
+<h1>New Friend</h1>
+<%= form_for @friend do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.label :age %>
+  <%= f.text_area :age %>
+
+  <%= f.label :hair_color %>
+  <%= f.text_area :hair_color %>
+
+  <%= f.label :eye_color %>
+  <%= f.text_area :eye_color %>
+
+  <%= f.label :gender %>
+  <%= f.text_area :gender %>
+
+  <%= f.label :alive %>
+  <%= f.text_area :alive %>
+
+  <%= f.submit %>
+<% end %>

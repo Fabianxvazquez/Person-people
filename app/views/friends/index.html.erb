@@ -1,5 +1,11 @@
 <h1>Friends</h1>
+<p><%= link_to 'New Friend', new_page_path(friend) %></p>
 <% @friends.each do |friend| %>
   <h2><%= friend.title %></h2>
-  <%= link_to 'Show Page', friend_path(friend) %>
+  <%= link_to 'Show friend', friend_path(friend) %>
+  <%= link_to 'Show friend', page_path(friend) %>
+  <%= link_to 'Edit friend', edit_page_path(friend) %>
+  <%= link_to 'Destroy friend', friend, method: :delete %>
 <% end %>
+
+
